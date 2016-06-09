@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Contacts</title>
+</head>
+<body>
+
+	<h2><span th:text="${message}"></span></h2>
+
+	<h1>Form</h1>
+	<form action="#" th:action="@{/insertEmployee}" th:object="${employee}"
+		method="post">
+		<p>
+			Enter Name: <input type="text" th:field="*{name}" />
+		</p>
+		<p>
+			<input type="submit" value="Submit" /> <input type="reset"
+				value="Reset" />
+		</p>
+	</form>
+
+</body>
+</html>
